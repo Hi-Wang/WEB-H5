@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>WISHOME-赫家，定制家具真专家</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+		<link rel="stylesheet" href="../../css/swiper.min.css" />
+		<!--<link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">-->
+		<link rel="stylesheet" href="../css/m.css" />
+	</head>
+
+	<body>
+		<div class="page-group">
+			<div class="page page-current">
+				<header class="bar bar-nav" style="background: #000000;height: 2.8rem;">
+					<!--<a href="#" class="open-panel" data-panel='#panel-right-demo'><span class="icon icon-menu pull-right" style="font-size: 2rem;padding: .8rem .1rem;color: #DCDCDC;"></span></a>-->
+					<span class="icon icon-menu pull-right open-panel" style="font-size: 2rem;padding: .8rem .1rem;color: #DCDCDC;" data-panel='#panel-right-demo'></span>
+					<h1 class="title" style="padding-top: .2rem;">
+						<img src="../images/logo.png" style="height: 2.4rem;" />
+					</h1>
+				</header>
+				<div class="content">
+					<div class="index_pic clearfix">
+						<img src="../images/brand/0-1.jpg" alt="">
+						<img src="../images/brand/0-2.jpg" alt="">
+						<img src="../images/brand/0-3.jpg" alt="">
+					</div>
+					<!-- Slider -->
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="../images/brand/0-4-1.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="../images/brand/0-4-2.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="../images/brand/0-4-3.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="../images/brand/0-4-4.jpg" alt=""></div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+					<div class="card">
+						<div class="card-content">
+							<div class="card-content-inner index-card-content-inner">
+								<p>联系我们</p>
+								<p>Contact Us</p>
+								<br />
+								<img src="../images/brand/2d-code.jpg" style="display: block;margin: .1rem auto;width: 8rem;" />
+								<p style="font-size: 1.2rem;color: #D9A34B;margin: .2rem auto;"><span class="icon icon-phone"></span>&nbsp;021-20239001</p>
+								<p>
+									&copy;上海慧金家具设计有限公司<br />沪ICP备10039684号<br />地址：上海市浦东新区东方路3539号6101室<br />
+									Copyright @ 2000-2017 All Right Reserved.<br />上海慧金家具设计 版权所有
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			
+			<div class="panel-cover"></div>
+			<div class="panel panel-right panel-cover theme-dark" id='panel-right-demo' style="background: #1c1d1f;opacity: .8;">
+				<div class="content-block">
+					<header class="bar bar-nav">
+						<a class="icon icon-right close-panel" style="float: left;color: #D9A34B;"></a>
+						<h1 class="title" style="color: #D9A34B;">WISHOME</h1>
+					</header>
+					<div class="list-block">
+						<ul style="margin-top: 3.6rem;padding-bottom: .1rem;">
+							<li class="item-content close-panel">
+								<a href="#">首页</a>
+							</li>
+							<li class="item-content close-panel">
+								<a href="about.html">关于赫家</a>
+							</li>
+							<li class="item-content close-panel">
+								<a href="allproduct.html">产品库</a>
+							</li>
+							<li class="item-content close-panel">
+								<a href="concept.html">定制理念</a>
+							</li>
+							<li class="item-content close-panel">
+								<a href="bespoke.html">定制家具</a>
+							</li>
+							<li class="item-content close-panel">
+								<a href="technology.html">品质与时尚</a>
+							</li>
+							<li class="item-content close-panel">
+								<a href="service.html">服务标准</a>
+							</li>
+							<li class="item-content close-panel">
+								<a href="contact.html">联系我们</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+		<script type="text/javascript">$.config = {router: false}</script>
+		<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+		<script type="text/javascript" src="../../js/swiper.min.js"></script>
+		<script>
+			$.init();
+			var swiper = new Swiper('.swiper-container', {
+				pagination: '.swiper-pagination',
+				paginationClickable: true,
+				spaceBetween: 5,
+				centeredSlides: true,
+				autoplay: 2500,
+				autoplayDisableOnInteraction: false
+			});
+		</script>
+		<!--<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>-->
+		<script>
+			$(".button-submit").on('touchend',function(e){
+				var cnameReg = /^[\u4E00-\u9FA5\uF900-\uFA2D]+$/;
+				if(!cnameReg.test($("#cname").val())){
+						alert("您输入的名字中含有非汉字字符，请重新输入！");
+						return;
+					}else{
+						var phoneReg=new RegExp(/^1[34578]\d{9}$/);
+							if(!phoneReg.test($("#phone").val())){
+								alert("您输入的手机号码有误，请重新输入");
+								return;
+							}else{
+								if($("textarea").val().length<10){
+										alert("您的留言字数似乎有点少，再想想吧！");
+										return;
+									}else{
+										$.ajax({
+											url:"http://localhost:8082/villion-web/rest/addUser",
+											type:"POST",
+											datatype:"json",
+											data:{"cname":$("#cname").val(),"phone":$("#phone").val(),"email":$("#email").val(),"server":$("#service option:checked").html(),"massage":$("textarea").val()},
+											success:function(data){
+												alert("留言提交成功！");
+											},error:function(){
+												alert("您的网络似乎出现了问题，请稍后重新提交。");
+											}
+										});
+									}
+							}
+					}
+			});
+		</script>
+	</body>
+
+</html>

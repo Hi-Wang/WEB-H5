@@ -1,0 +1,12 @@
+*{margin: 0;padding: 0;}
+.clearfix{*zoom: 1;}
+.clearfix:after{content: "";clear: both;display: table;}
+body{width: 1000px;background: #fff;position: relative;}
+.product-list{padding: 0px 30px;list-style: none;}
+.product-list li{float: left;margin: 10px;}
+.product-list li img{width: 214px;}
+.product-list li span{display: block;line-height: 20px;height: 20px;font-size: 12px;text-align: center;}
+.pages{line-height: 24px;height: 24px;font-size: 14px;text-align: center;}
+.pages a{display: inline-block;margin: 0 10px;text-decoration: none;color: #666;}
+.pages a:hover{text-decoration: underline;}
+.pages a.active{font-size: 14px;color: #D9A34B;}
